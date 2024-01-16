@@ -41,7 +41,7 @@ e execute o algoritmo
 ```bash
    cd bolsas-fnde ; python3 main.py
 ```
-e após a primeira consulta, as proximas consultados podem ser feitas ao executar o main.py com
+e após a primeira consulta, as próximas consultas podem ser feitas ao executar o main.py com
 ```bash
    python3 main.py
 ```
