@@ -11,7 +11,7 @@ Bem-vindo ao projeto **Consulta de Bolsas do FNDE**. Esta biblioteca foi criada 
 
 A biblioteca automatiza consultas periódicas ao site do FNDE para verificar se a tão esperada bolsa foi concedida. Adeus às verificações manuais repetitivas! 🎉
 
-## 🚀 Instalação Rápida
+## 🚀 Instalação Rápida Ainda não funciona (por enquanto)
 
 Para começar, siga estes passos simples:
 
@@ -26,4 +26,22 @@ Para começar, siga estes passos simples:
 2. **Executa biblioteca com **
 ```bash
    python3 -m bolsasfnde
-```   
+```
+##  💡Execução Manual
+
+Clone o repositório
+```bash
+   git clone https://github.com/asm444/bolsas-fnde.git
+```
+instale as dependências 
+```bash
+   python3 -m pip install requests
+```
+e execute o algoritmo
+```bash
+   cd bolsas-fnde ; python3 main.py
+```
+e após a primeira consulta, as proximas consultados podem ser feitas com
+```bash
+   cd bolsas-fnde ; python3 main.py
+```
