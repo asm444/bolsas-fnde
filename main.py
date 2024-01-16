@@ -149,6 +149,12 @@ def caiu():
         
     else:
         print("Nenhum novo pagamento recebido.\n")
+
+    troca = input("Trocar o cpf (Y/N): ").lower()
+    
+    if troca =='y':
+        armazenar_cpf()
+        caiu()
     
 if __name__=='__main__':
     caiu()         
