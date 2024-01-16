@@ -23,7 +23,7 @@ Para começar, siga estes passos simples:
    ```bash
    git clone https://github.com/asm444/bolsas-fnde.git && python3 -m pip install -e bolsas-fnde
    ```
-2. **Executa biblioteca com**
+2. **Execute a biblioteca com**
 ```bash
    python3 -m bolsasfnde
 ```
