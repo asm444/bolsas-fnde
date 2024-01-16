@@ -15,6 +15,15 @@ A biblioteca automatiza consultas periódicas ao site do FNDE para verificar se 
 
 Para começar, siga estes passos simples:
 
-1. **Clone o Repositório:**
+1. **Instale usando o pip:**
    ```bash
-   git clone https://github.com/asm444/bolsas-fnde.git
+   python3 -m pip install bolsasfnde
+   ````
+   ou Clone e instale localmente:
+   ```bash
+   git clone https://github.com/asm444/bolsas-fnde.git && python3 -m pip install -e bolsas-fnde
+   ```
+2. **Executa biblioteca com **
+```bash
+   python3 -m bolsasfnde
+```   
