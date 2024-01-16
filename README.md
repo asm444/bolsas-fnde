@@ -5,7 +5,7 @@ O projeto "Consulta de Bolsas do FNDE" visa simplificar e agilizar o processo de
 
 Bem-vindo ao projeto **Consulta de Bolsas do FNDE**. Esta biblioteca foi criada para simplificar o processo de verificação do status da concessão de bolsas através do site do Fundo Nacional de Desenvolvimento da Educação (FNDE).
 
-![FNDE Logo]([link-para-imagem-do-logo.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.brandsoftheworld.com%2Flogo%2Ffnde&psig=AOvVaw3a24b7fuacejU57PbGqX8a&ust=1705506985245000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCIDrpuKi4oMDFQAAAAAdAAAAABAE))
+![FNDE Logo](https://convivaeducacao.org.br/uploads/broadcast/image/3237/cover_phpYM0QWh_6126731d10678.png)
 
 ## 💡 Como Funciona?
 
