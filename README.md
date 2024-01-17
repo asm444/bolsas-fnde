@@ -1,13 +1,11 @@
-# Consultas de Bolsas do FNDE
-O projeto "Consulta de Bolsas do FNDE" visa simplificar e agilizar o processo de verificação do status da concessão de bolsas através do site do Fundo Nacional de Desenvolvimento da Educação (FNDE). A ideia central é automatizar consultas periódicas para verificar se a bolsa foi concedida, proporcionando uma solução eficiente para os beneficiários.
-
 # 🌟 Consulta de Bolsas do FNDE 🌟
+[📦 PyPI](https://pypi.org/project/bolsasfnde/)
 
 Bem-vindo ao projeto **Consulta de Bolsas do FNDE**. Esta biblioteca foi criada para simplificar o processo de verificação do status da concessão de bolsas através do site do Fundo Nacional de Desenvolvimento da Educação (FNDE).
 
 ## 💡 Como Funciona?
 
-A biblioteca automatiza consultas periódicas ao site do FNDE para verificar se a tão esperada bolsa foi concedida. Adeus às verificações manuais repetitivas! 🎉
+O algoritmo faz uma requisição para um endpoint do FNDE usando o CPF do bolsista. Obtendo um hash com algumas informações do bolsista, mas o interessante é usar o hash para obter a informação o histórico de bolsas recebidas. Quando o hash é enviado a outro endpoint, obtemos um json com o histórico de bolsas que recebe um tratamento para deixar legível e permite descobrir se a bolsa caiu.
 
 ## 🚀 Instalação Rápida
 
@@ -22,24 +20,24 @@ Para começar, siga estes passos simples:
    git clone https://github.com/asm444/bolsas-fnde.git && python3 -m pip install -e bolsas-fnde
    ```
 2. **Execute a biblioteca com**
-```bash
+   ```bash
    python3 -m bolsasfnde
-```
+   ```
 ##  💡Execução Manual
 
 Clone o repositório
-```bash
+   ```bash
    git clone https://github.com/asm444/bolsas-fnde.git
-```
+   ```
 instale as dependências 
-```bash
+   ```bash
    python3 -m pip install requests
-```
+   ```
 e execute o algoritmo
-```bash
+   ```bash
    cd bolsas-fnde ; python3 main.py
-```
+   ```
 e após a primeira consulta, as próximas consultas podem ser feitas ao executar o main.py com
-```bash
+   ```bash
    python3 main.py
-```
+   ```
