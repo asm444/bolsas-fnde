@@ -11,7 +11,7 @@ Bem-vindo ao projeto **Consulta de Bolsas do FNDE**. Esta biblioteca foi criada 
 
 A biblioteca automatiza consultas periódicas ao site do FNDE para verificar se a tão esperada bolsa foi concedida. Adeus às verificações manuais repetitivas! 🎉
 
-## 🚀 Instalação Rápida Ainda não funciona (por enquanto)
+## 🚀 Instalação Rápida
 
 Para começar, siga estes passos simples:
 
