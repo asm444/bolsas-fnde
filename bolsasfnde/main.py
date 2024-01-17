@@ -142,11 +142,32 @@ def caiu():
     ######## encontrando o ultimo pagemento
     
     mes_anterior_armazenado = data["programas"][0]["entidades"][list(data["programas"][0]["entidades"].keys())[0]]["funcoes"][list(data["programas"][0]["entidades"][list(data["programas"][0]["entidades"].keys())[0]]["funcoes"].keys())[0]]["pagamentos"][-1]["data"][3:5]
-    
+    bolsas_recebidas=len(data["programas"][0]["entidades"][list(data["programas"][0]["entidades"].keys())[0]]["funcoes"][list(data["programas"][0]["entidades"][list(data["programas"][0]["entidades"].keys())[0]]["funcoes"].keys())[0]]["pagamentos"])
     if mes_anterior_armazenado == mes_anterior:
-        
-        print("Se não tiver atraso, a sua bolsa está te esperando no banco.\n")
-        
+        if isfile("caiu.txt"):
+            with open("caiu.txt","r") as file:
+                recebeu = file.readline()
+                file.close()
+            if recebeu==bolsas_recebidas:
+                print("Nenhum novo pagamento recebido.\n")
+            else:
+                test = input("Conseguiu receber? (Y/N) ").lower()
+                if test=='y':
+                    with open("caiu.txt","r") as file:
+                        file.write(str(bolsas_recebidas))
+                        file.close()
+                        print("Nenhum novo pagamento.\n")
+                else:
+                    print("Se não tiver atraso, a sua bolsa está te esperando no banco.\n")
+        else:
+            test = input("Conseguiu receber? (Y/N) ").lower()
+            if test=='y':
+                with open("caiu.txt","r") as file:
+                    file.write(str(bolsas_recebidas))
+                    file.close()
+                    print("Nenhum novo pagamento recebido.\n")
+            else:
+                print("Se não tiver atraso, a sua bolsa está te esperando no banco.\n")
     else:
         print("Nenhum novo pagamento recebido.\n")
 
