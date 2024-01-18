@@ -118,7 +118,7 @@ def consulta():
     return data
 
 def caiu(): 
-    mes_anterior = str(datetime.now().month)
+    mes_atual = str(datetime.now().month)
     
     data = consulta()
     total_atual = data.get("total")
