@@ -118,11 +118,7 @@ def consulta():
     return data
 
 def caiu(): 
-    mes_anterior = datetime.now().month -1
-    if mes_anterior == 0:
-        mes_anterior = 12
-        
-    mes_anterior = str(mes_anterior)
+    mes_anterior = str(datetime.now().month)
     
     data = consulta()
     total_atual = data.get("total")
@@ -143,7 +139,7 @@ def caiu():
     
     mes_anterior_armazenado = data["programas"][0]["entidades"][list(data["programas"][0]["entidades"].keys())[0]]["funcoes"][list(data["programas"][0]["entidades"][list(data["programas"][0]["entidades"].keys())[0]]["funcoes"].keys())[0]]["pagamentos"][-1]["data"][3:5]
     bolsas_recebidas=len(data["programas"][0]["entidades"][list(data["programas"][0]["entidades"].keys())[0]]["funcoes"][list(data["programas"][0]["entidades"][list(data["programas"][0]["entidades"].keys())[0]]["funcoes"].keys())[0]]["pagamentos"])
-    if mes_anterior_armazenado == mes_anterior:
+    if mes_anterior_armazenado == mes_atual:
         if isfile("caiu.txt"):
             with open("caiu.txt","r") as file:
                 recebeu = file.readline()
