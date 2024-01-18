@@ -125,7 +125,7 @@ def caiu():
     
     if not isfile('total.txt'):
         with open('total.txt', "w") as file:  
-            file.write(f"{total_atual}p{mes_anterior}")
+            file.write(f"{total_atual}p{mes_atual}")
             file.close()
    
     with open('total.txt','r') as file:
